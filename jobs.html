@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>AdminPage</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <form action="jobs.jsp" method="post">
+    <link rel="stylesheet" type="text/css" href="jobs.css">
+    <body background="adminstart.jpg">
+        <table>
+            <tr>
+                <th colspan="3">
+                    <p align="center"><b><font size="8" color="white">JOB AVAILABILITY</b></font></p>
+                </th>
+            </tr>
+            <form>
+                <tr>
+                    <th><font size="6" family="verdana"><b>COMPANY NAME: </th></b></font>
+                    <th><font size="6" family="verdana"><b>POSITION: </th></b></font>
+                    <th><font size="6" family="verdana"><b>SKILLS REQUIRED: </th></b></font>
+                </tr>
+                <tr>
+                    <td><input type="text" name="company" size="40" required></td>
+                    <td><input type="text" name="position" size="40" required></td>
+                    <td><input type="text" name="skills" size="40" required></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan='3'><button type="submit" class="submit">ADD JOB</button></td>
+                </tr>
+            </form>
+        </table>
+    </body>
+    </form>
+</html>

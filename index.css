@@ -1,0 +1,86 @@
+.clock{
+    margin-left: 450px;
+    margin-top: 450px;
+}
+#clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#clockdiv > div{
+    border-radius: 3px;
+    background: transparent;
+    display: inline-block;
+}
+
+#clockdiv div > span{
+    padding: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 3px;
+    background: rgba(0,0,0,0.1);
+    display: inline-block;
+}
+
+.smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+.image_container .clock{
+  position: absolute;
+  top: 70%;
+  left: 35%;
+}
+
+.singers{
+    position: absolute;
+    font-family: Roboto, sans-serif;
+}
+
+#mg{
+    top: 125%;
+    left: 20%;
+}
+
+#mg > p{
+    position: absolute;
+    top: 20%;
+    left: 75%;
+    width: 500px;
+    background-color: white;
+    padding: 30px;
+}
+
+#imd{
+    top: 255%;
+    left: 40%;
+}
+
+#imd > p{
+    background-color: white;
+    padding: 30px;
+    width: 500px;
+    position: absolute;
+    top: 15%;
+    right: 90%;
+}
+
+#m5{
+    top: 350%;
+    left: 10%;
+}
+
+#m5 > p{
+    position: absolute;
+    top: 15%;
+    left: 45%;
+    width: 500px;
+    background-color: white;
+    padding: 30px;
+}

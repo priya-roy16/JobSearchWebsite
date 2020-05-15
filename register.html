@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Register Page</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <form action="register.jsp" method="post" onsubmit="return validate(this)">
+    <link rel="stylesheet" type="text/css" href="register.css">
+    <body background="adminlogin.jpg">
+        <p align='center'><font size="18"><b><i>REGISTER</i></b></font></p>
+        <div class="container">
+            <label for="name"><font size="3" family='impact' color="green" required><b>NAME: </b></label>
+            <input type="text" name="name" id="name"><br>
+            <label for="email"><font size="3" family='impact' color="green" required><b>EMAIL: </b></label>
+            <input type="email" name="email" id="email"><br>
+            <label for="mobile"><font size="3" family='impact' color="green" required><b>MOBILE NUMBER: </b></label>
+            <input type="text" name="mobile" id="mobile"><br><br>
+            <label for="dob"><font size="3" family='impact' color="green"><b>DATE OF BIRTH: </b></label><br>
+            <input type="date" name="dob"><br><br>
+            <label for="password"><font size="3" family='impact' color="green" required><b>PASSWORD: </b></label></font>
+            <input type="password" name="password" id="password"><br>
+        </div>
+    
+        <button type="submit" onclick="return validate()" class="register">REGISTER</button>
+         </form>
+    <script type="text/javascript">
+        
+            function validate()
+            {
+                var result=true;
+                var field = document.getElementById('email').value;
+                var arr=field.split('.');
+			if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(field)) {
+				window.alert("Email address is Wrong");
+				result = result && false;
+			}
+                field = document.getElementById('mobile').value;
+                    if (!/^[0-9]{10}$/.test(field)) {
+                            window.alert("Phone number should contain 10 digits");
+                            result = result && false;
+                        }
+                field = document.getElementById('password').value;
+			if (!/^[a-zA-Z0-9]+$/.test(field)) {
+				window.alert("Password should be alphanumeric");
+				result = result && false;
+			}
+                        return result;
+            }
+            </script>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+body, html {
+   height: 160%;
+   width:100%;
+   background-image:url(adminstart.jpg); 
+   background-repeat:no-repeat;/*we want to have one single image not a repeated one*/  
+   background-size:cover;
+}
+
+table,td,th{
+    border: 5px double grey;
+    padding:5px;
+}
+
+th{
+    background-color:black;
+    color:white;
+}
+table{
+    position:absolute;
+    top:20%;
+    left:18%;
+}
+
+.submit {
+  background-color: #8B0000;
+  color: white;
+  padding:14px 20px;
+  margin:8px 0;
+  width:100%;
+  height:20%;
+  cursor:pointer;
+  text-align:center;
+}
+
+button:hover {
+    opacity:0.5;
+}
